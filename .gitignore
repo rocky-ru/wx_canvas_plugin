@@ -4,7 +4,7 @@
 # project
 build/
 dist/
-plugin/libs/easydraw/*
+plugin/libs/easydraw
 
 # node.js
 node_modules/
