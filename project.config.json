@@ -1,0 +1,15 @@
+{
+	"miniprogramRoot": "./miniprogram",
+	"pluginRoot": "./plugin",
+	"compileType": "plugin",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"appid": "wxeb74fbdc5d514816",
+	"projectname": "tk_whiteboard_sdk",
+	"condition": {}
+}

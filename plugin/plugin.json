@@ -1,0 +1,6 @@
+{
+  "publicComponents": {
+		"tkcanvas": "components/tk_canvas/tk_canvas"
+  },
+  "main": "index.js"
+}

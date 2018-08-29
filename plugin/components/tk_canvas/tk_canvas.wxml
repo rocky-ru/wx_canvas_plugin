@@ -1,0 +1,11 @@
+<!--plugin/components/tk_canvas/tk_canvas.wxml-->
+<view id='tk-canvas'>
+
+	<text>TKCanvas component</text>
+	<canvas canvas-id='main'
+					id='main'
+					style="{{style}}">
+	</canvas>
+	<!-- <button bindtap='onBtnTap'>11</button> -->
+
+</view>

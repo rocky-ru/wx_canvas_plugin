@@ -1,0 +1,4 @@
+<!-- <list /> -->
+<tkcanvas custom-style='background-color:lightgray;'/>
+<button bindtap='joinroomClick'>join room</button>
+<button>leave room</button>

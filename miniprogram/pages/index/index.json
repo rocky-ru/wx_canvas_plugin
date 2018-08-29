@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "tkcanvas": "plugin://myPlugin/tkcanvas"
+  }
+}
