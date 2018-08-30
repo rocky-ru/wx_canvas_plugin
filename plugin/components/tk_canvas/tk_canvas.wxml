@@ -6,6 +6,6 @@
 					id='main'
 					style="{{style}}">
 	</canvas>
-	<!-- <button bindtap='onBtnTap'>11</button> -->
+	<button bindtap='onBtnTap'>11</button>
 
 </view>

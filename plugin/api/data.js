@@ -10,5 +10,5 @@ function setData(value) {
 
 module.exports = {
   getData: getData,
-  setData: setData
+  setData: setData,
 }

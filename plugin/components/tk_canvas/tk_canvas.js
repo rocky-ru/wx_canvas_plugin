@@ -2,7 +2,7 @@ import config from '../../conf/index.js'
 import utils from '../../libs/utils/index.js'
 import ed from '../../libs/easydraw/src/index'
 
-console.log(ed) 
+// console.log(ed) 
 
 const {canvasConf:{defaultStyle}} = config,
 	  {stringUtil:{jsonToCssString, cssStringToJson}} = utils
@@ -42,7 +42,41 @@ Component({
    */
   methods: {
 		onBtnTap:function(jsonData){
-			
+			const shape1 = {
+				"className": "Line",
+				"data": {
+					"x1": 28.09589250267216,
+					"y1": 31.149793861658267,
+					"x2": 28.09589250267216,
+					"y2": 155.74896930829132,
+					"strokeWidth": 5,
+					"color": "#000000",
+					"capStyle": "round",
+					"dash": null,
+					"endCapShapes": [
+						null,
+						null
+					]
+				},
+				"id": "caf9f77b-580a-fb17-7710-858f0f463fb2",
+				"x1": 28.09589250267216,
+				"y1": 31.149793861658267,
+				"x2": 28.09589250267216,
+				"y2": 155.74896930829132,
+				"strokeWidth": 5,
+				"color": "#000000",
+				"capStyle": "round",
+				"dash": null,
+				"endCapShapes": [
+					null,
+					null
+				]
+			}
+
+			ed.canvasRenderer.renderShapeToContext(
+				wx.createCanvasContext('main'),
+				shape1
+			)
 		},
 		getBoundingRect: function (selector){
 			const query = wx.createSelectorQuery().in(this)
@@ -68,6 +102,7 @@ Component({
 			// 若设置了宽或高且同时设置了宽高比，则按照宽高比去设置未设置的项
 			// customRatio仅支持'1'、'1.xx'这种形式的宽高比
 			this.getBoundingRect('#main').then(rect => {
+				console.log('222')
 				if (({}).hasOwnProperty.call(defaultStyle, 'width') && ({}).hasOwnProperty.call(defaultStyle, 'height')) {
 					return console.debug('Canvas has width and height,ratio will be useless')
 				} else if (({}).hasOwnProperty.call(defaultStyle, 'width') && !({}).hasOwnProperty.call(defaultStyle, 'height')) {
@@ -82,6 +117,16 @@ Component({
 					})
 				}
 			})
+
+			// let ctx = wx.createCanvasContext('main')
+			// ctx.lineWidth = 5;
+			// ctx.strokeStyle = 'red';
+			// ctx.beginPath();
+			// ctx.moveTo(0, 0);
+			// ctx.lineTo(50, 50);
+			// ctx.stroke();
+			// console.log(111)
+			// ctx.draw(true);
 		},
 		detached: function () { },
 	},
